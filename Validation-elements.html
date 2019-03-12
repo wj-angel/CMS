@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validation-elements</title>
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="fontone/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/myform-elements.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+</head>
+<body>
+<div class="top-nav navbar-default">
+    <!--branding开始-->
+    <div class="navbar-header l logo">
+        <a href="#" class="logo-a ">
+            <strong>MIN</strong>IMAL
+        </a>
+        <a href="javascript:0;" class="onoff" id="onoff">
+            <i class="iconfont icon-menu"></i>
+        </a>
+    </div>
+    <!--/branding-->
+    <!--nav-collapse-->
+    <div class="navbar-collapse ">
+        <ul class="refresh l">
+            <li class="divided refresh-li">
+                <a href="#" class="page-refresh">
+                    <i class="iconfont icon-sync"></i>
+                </a>
+            </li>
+        </ul>
+        <ul class="l search-ul hidden">
+            <li>
+                <div class="main-search">
+                    <i class="iconfont icon-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+            </li>
+        </ul>
+
+        <ul class="quick-actions r">
+            <li class="dropdown divided">
+                <a href="#" class="dropdown-toggle button">
+                    <i class="iconfont icon-shouye-sandaogangcaidan"></i>
+                    <span class="label label-transparent-black">2</span>
+                </a>
+            </li>
+            <li class="dropdown divided">
+                <a href="#" class="dropdown-toggle button">
+                    <i class="iconfont icon-xinfeng"></i>
+                    <span class="label label-transparent-black">1</span>
+                </a>
+            </li>
+            <li class="dropdown divided">
+                <a href="#" class="dropdown-toggle button">
+                    <i class="iconfont icon-xiaoxi1"></i>
+                    <span class="label label-transparent-black">3</span>
+                </a>
+            </li>
+            <li class="dropdown user divided hidden" id="current-user">
+                <div class="pic">
+                    <img src="images/profile-photo.jpg">
+                </div>
+                <a href="#" class="dropdown-toggle button">
+                    John Douey
+                    <i class="iconfont zhankai"></i>
+                </a>
+            </li>
+            <li class="dropdown divided">
+                <a href="#" class="dropdown-toggle button">
+                    <i class="iconfont icon-xiaoxi2"></i>
+                </a>
+            </li>
+        </ul>
+        <ul id="sidenav_container" class="side-nav l one-menu">
+            <li class="side-li search-li">
+                <div class="main-search">
+                    <i class="iconfont icon-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+            </li>
+            <li class="side-li one-li lg-show" id="navigation">
+                <a class="sidebar-toggle" href="javascript:0;" >
+                    Navigation
+                    <i class="iconfont icon-gengduo-copy"></i>
+                </a>
+                <ul class="tow-menu">
+                    <li class="tow-li dropdowm now">
+                        <a href="index.html" class="dropdown-toggle">
+                            <i class="iconfont icon-dashboard"></i>Dashboard
+                            <span class="badge badge-red">1</span>
+                        </a>
+                    </li>
+                    <li class="tow-li dropdowm">
+                        <a href="javascript:0;" class="dropdown-toggle">
+                            <i class="iconfont icon-caidan"></i>Forms
+                            <i class="iconfont icon-jia2 r show-ilb"></i>
+                        </a>
+                        <ul class="three-menu hidden">
+                            <li class="three-li">
+                                <a href="myform-elements.html">
+                                    <b class="rightarrow"></b> Common Elements
+                                </a>
+                            </li>
+                            <li class="three-li">
+                                <a href="Validation-elements.html">
+                                    <b class="rightarrow"></b>Validation
+                                </a>
+                            </li>
+                            <li class="three-li">
+                                <a href=" form-wizard.html">
+                                    <b class="rightarrow"></b> Form Wizard
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tow-li dropdowm">
+                        <a href="javascript:0;" class="dropdown-toggle">
+                            <i class="iconfont icon-qianbi1"></i>Interface
+                            <i class="iconfont icon-jia2 r tow-i .show-ilb"></i>
+                        </a>
+                        <ul class="three-menu hidden">
+                            <li class="three-li">
+                                <a href="uiElement.html">
+                                    <b class="rightarrow"></b> UI Elements
+                                </a>
+                            </li>
+                            <li class="three-li">
+                                <a href=" typography.html">
+                                    <b class="rightarrow"></b>Typography
+                                </a>
+                            </li>
+                            <li class="three-li">
+                                <a href="tiles.html">
+                                    <b class="rightarrow"></b>Tiles
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tow-li dropdowm">
+                        <a href="button.html" class="dropdown-toggle">
+                            <i class="iconfont icon-shuidi1"></i> Buttons & Icons
+                        </a>
+                    </li>
+                    <li class="tow-li dropdowm">
+                        <a href=" grid.html" class="dropdown-toggle">
+                            <i class="iconfont icon-gengduo1"></i> Grid Layout
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="side-li one-li">
+                <a href="javascript:0;" class="sidebar-toggle">
+                    Orders Summary
+                    <i class="iconfont icon-gengduo-copy"></i>
+                </a>
+                <div class="media">
+                    <a href="javascript:0;" class="pull-right r red"></a>
+                    <div class="media-bd">
+                        This week sales<h3 class="media-heading">26,149</h3>
+                    </div>
+                </div>
+                <div class="media">
+                    <a href="javascript:0;" class="pull-right r blue">
+                    </a>
+                    <div class="media-bd">
+                        This week sales<h3 class="media-heading">26,149</h3>
+                    </div>
+                </div>
+            </li>
+            <li class="side-li one-li">
+                <a href="javascript:0;" class="sidebar-toggle">
+                    General Settings
+                    <i class="iconfont icon-gengduo-copy"></i>
+                </a>
+                <div class="form-group">
+                    <label class="control-label w-xs-8">Switch ON</label>
+                    <div class="control-label w-xs-4">
+                        <input type="checkbox" class="onoffswitch-checkbox hidden" id="switch-on" name="onoffswitch" >
+                        <label class="onoffswitch-label" for="switch-on" >
+                            <span class="onoffswitch-box"></span>
+                            <span class="onoffswitch-ball"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group w-xs-40">
+                    <label class="control-label w-xs-8">Switch OFF</label>
+                    <div class="control-label w-xs-4">
+                        <input type="checkbox" class="onoffswitch-checkbox hidden" id="switch-off" name="onoffswitch" >
+                        <label class="onoffswitch-label" for="switch-off" >
+                            <span class="onoffswitch-box"></span>
+                            <span class="onoffswitch-ball"></span>
+                        </label>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--/nav-collapse-->
+</div>
+<main class="content">
+    <div class="AD">
+        <div class="container">
+            <a href="javascript:0;">
+                <img src="images/20181204.jpg">
+            </a>
+        </div>
+    </div>
+    <div class="mask hidden">
+
+    </div>
+    <div class="wrap">
+        <div id="echMain" class="main padding-l-265">
+            <div class="pageheader">
+                <h2>
+                    <i class="iconfont icon-shezhi"></i>  Form Validation
+                    <span class="visible-md">// Place subtitle here...</span>
+                </h2>
+                <div class="breadcrumbs ">
+                    <ol>
+                        <li>You are here</li>
+                        <li>>
+                            <a href="index.html">Minimal</a>
+                        </li>
+                        <li>>
+                            <a href="myform-elements.html">Form</a>
+                        </li>
+                        <li class="active">>&nbsp;Validation elements</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="main_bd">
+                <div class="row">
+                    <div class="w-md-12">
+                        <section class="tile" id="sec1">
+                            <div class="tile-header">
+                                <h1>
+                                    <strong>Text</strong> Inputs
+                                </h1>
+                                <div class="controls">
+                                    <a href="#" class="refresh">
+                                        <i class="iconfont icon-shuaxin"></i>
+                                    </a>
+                                    <a href="#" class="remove">
+                                        <i class="iconfont icon-poweroff"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tile-body">
+                                <div class="input-group margin-bottom-20">
+                                    <span class="input-group-addon addon-red">@</span>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </div>
+                                <div class="input-group margin-bottom-20">
+                                    <input type="text" class="form-control" placeholder="Username">
+                                    <span class="input-group-addon addon-greensea">.00</span>
+                                </div>
+                                <div class="input-group margin-bottom-20">
+                                    <span class="input-group-addon">$</span>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                    <span class="input-group-addon">.00</span>
+                                </div>
+                                <h4>
+                                    <strong>Sizing</strong>
+                                </h4>
+                                <input type="text" class="form-control input-lg margin-bottom-20" placeholder=".input-lg">
+                                <input type="text" class="form-control margin-bottom-20" placeholder="Default input">
+                                <input type="text" class="form-control input-sm margin-bottom-20" placeholder=".input-sm">
+                                <h4><strong>Checkboxes</strong>and radio addons</h4>
+                                <div class="row">
+                                    <div class="w-lg-6">
+                                        <div class="input-group margin-bottom-20">
+                                            <span class="input-group-addon"><input type="checkbox"></span>
+                                            <input type="text" class="form-control" placeholder="Username">
+                                        </div>
+                                    </div>
+                                    <div class="w-lg-6">
+                                        <div class="input-group margin-bottom-20">
+                                            <span class="input-group-addon"><input type="radio"></span>
+                                            <input type="text" class="form-control" placeholder="Username">
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4><strong>Button addons</strong></h4>
+                                <div class="row">
+                                    <div class="w-lg-6">
+                                        <div class="input-group input-group-lg margin-bottom-20">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button">Go!</button>
+                                        </span>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="w-lg-6">
+                                        <div class="input-group margin-bottom-20">
+                                            <input type="text" class="form-control">
+                                            <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button">Go!</button>
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="tile color transparent-black">
+                            <div class="tile-header">
+                                <h1>
+                                    <strong>Vertical</strong> Form
+                                </h1>
+                                <div class="controls">
+                                    <a href="#" class="refresh">
+                                        <i class="iconfont icon-shuaxin"></i>
+                                    </a>
+                                    <a href="#" class="remove">
+                                        <i class="iconfont icon-poweroff"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tile-body">
+                                <div class="row">
+                                    <div class="form-group w-sm-6">
+                                        <label for="exampleInputEmail">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group w-sm-3">
+                                        <label for="exampleInputEmail">Password</label>
+                                        <input type="email" class="form-control" id="Password" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group w-sm-3">
+                                        <label for="Passwordrepeat">Password repeat</label>
+                                        <input type="email" class="form-control" id="Passwordrepeat" placeholder="Enter email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group w-sm-4">
+                                        <label for="City">City</label>
+                                        <input type="email" class="form-control" id="City" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group w-sm-4">
+                                        <label for="Address">Address</label>
+                                        <input type="email" class="form-control" id="Address" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group w-sm-4">
+                                        <label for="Country">Country</label>
+                                        <input type="email" class="form-control" id="Country" placeholder="Enter email">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="tile color transparent-white">
+                            <div class="tile-header">
+                                <h1>
+                                    <strong>Horizontal</strong> Form
+                                </h1>
+                                <div class="controls">
+                                    <a href="#" class="refresh">
+                                        <i class="iconfont icon-shuaxin"></i>
+                                    </a>
+                                    <a href="#" class="remove">
+                                        <i class="iconfont icon-poweroff"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tile-body">
+                                <div class="form-horizontal">
+                                    <div class="row">
+                                        <div class="form-group w-md-4">
+                                            <label class="w-sm-4 control-label" for="exampleInputEmail2">Email address</label>
+                                            <div class="w-sm-8">
+                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+                                            </div>
+                                        </div>
+                                        <div class="form-group w-md-4">
+                                            <label class="w-sm-4 control-label" for="exampleInputPassword3">Password</label>
+                                            <div class="w-sm-8">
+                                                <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+                                            </div>
+                                        </div>
+                                        <div class="form-group w-md-4">
+                                            <label class="w-sm-4 control-label" for="exampleInputPassword4">Password repeat</label>
+                                            <div class="w-sm-8">
+                                                <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password repeat">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="w-md-6">
+                        <div class="tile color transparent-black">
+                            <div class="tile-header">
+                                <h1>
+                                    <strong>Text</strong> Inputs
+                                </h1>
+                                <div class="controls">
+                                    <a href="#" class="refresh">
+                                        <i class="iconfont icon-shuaxin"></i>
+                                    </a>
+                                    <a href="#" class="remove">
+                                        <i class="iconfont icon-poweroff"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tile-body">
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label for="input01" class="w-sm-4 control-label">Normal input field</label>
+                                        <div class="w-sm-8">
+                                            <input type="text" class="form-control" id="input01">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input02" class="w-sm-4 control-label">Password input field</label>
+                                        <div class="w-sm-8">
+                                            <input type="text" class="form-control" id="input02">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input03" class="w-sm-4 control-label">Input with help text</label>
+                                        <div class="w-sm-8">
+                                            <input type="text" class="form-control" id="input03">
+                                            <span class="help-block">
+                                                A block of help text that breaks onto a new line and may extend beyond one line.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input04" class="w-sm-4 control-label">Input field with placeholder</label>
+                                        <div class="w-sm-8">
+                                            <input type="text" class="form-control" id="input04" placeholder="This is placeholder...">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input05" class="w-sm-4 control-label">Normal textarea</label>
+                                        <div class="w-sm-8">
+                                            <textarea class="form-control" id="input05" rows="6"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group transparent-editor">
+                                        <label for="input04" class="w-sm-4 control-label">Textarea with editor</label>
+                                        <div class="w-sm-8">
+                                            <div class="form-control" id="input06" style="display: none;"></div>
+                                            <div class="note-editor">
+                                                <div class="note-toolbar btn-toolbar"></div>
+                                                <textarea class="note-codable"></textarea>
+                                                <div class="note-editable" contenteditable="true" style="height: 121px;">
+                                                    <p>
+                                                        <br>
+                                                    </p>
+                                                </div>
+                                                <div class="note-statusbar">
+                                                    <div class="note-resizebar">
+                                                        <div class="note-icon-bar"></div>
+                                                        <div class="note-icon-bar"></div>
+                                                        <div class="note-icon-bar"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-footer">
+                                        <div class="w-sm-offset-4 w-sm-8">
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                            <button type="reset" class="btn btn-default">Reset</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-md-6">
+                        <div class="tile color transparent-white">
+                            <div class="tile-header">
+                                <h1>
+                                    <strong>Text</strong> Inputs
+                                </h1>
+                                <div class="controls">
+                                    <a href="#" class="refresh">
+                                        <i class="iconfont icon-shuaxin"></i>
+                                    </a>
+                                    <a href="#" class="remove">
+                                        <i class="iconfont icon-poweroff"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tile-body">
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label  class="w-sm-4 control-label">Normal input field</label>
+                                        <div class="w-sm-8">
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label  class="w-sm-4 control-label">Password input field</label>
+                                        <div class="w-sm-8">
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label  class="w-sm-4 control-label">Input with help text</label>
+                                        <div class="w-sm-8">
+                                            <input type="text" class="form-control" >
+                                            <span class="help-block">
+                                                A block of help text that breaks onto a new line and may extend beyond one line.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label  class="w-sm-4 control-label">Input field with placeholder</label>
+                                        <div class="w-sm-8">
+                                            <input type="text" class="form-control"  placeholder="This is placeholder...">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label  class="w-sm-4 control-label">Normal textarea</label>
+                                        <div class="w-sm-8">
+                                            <textarea class="form-control"  rows="6"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group transparent-editor">
+                                        <label for="input04" class="w-sm-4 control-label">Textarea with editor</label>
+                                        <div class="w-sm-8">
+                                            <div class="form-control" style="display: none;"></div>
+                                            <div class="note-editor">
+                                                <div class="note-toolbar btn-toolbar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-footer">
+                                        <div class="w-sm-offset-4 w-sm-8">
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                            <button type="reset" class="btn btn-default">Reset</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/echarts/dist/echarts.min.js"></script>
+<script type="text/javascript" src="bower_components/vue/dist/vue.js"></script>
+<script type="text/javascript" src="js/echart.js"></script>
+<script>
+    let count = 0;
+    $(".sidebar-toggle").click(function () {
+        count++;
+        if(count%2!=0){
+            $(this).find(".iconfont").removeClass("icon-gengduo-copy").addClass("icon-shangjiantou");
+        }else{
+            $(this).find(".iconfont").addClass("icon-gengduo-copy").removeClass("icon-shangjiantou");
+        }
+        $(this).siblings().slideToggle(300);
+    });
+    $(".dropdown-toggle").click(function () {
+        if(!$(this).hasClass("open")){
+            $(".dropdown-toggle").removeClass("open").find(".icon-jian").addClass("icon-jia2").removeClass("icon-jian");
+            $(".dropdown-toggle").siblings(".three-menu").hide();
+            $(this).addClass("open").find(".icon-jia2").removeClass("icon-jia2").addClass("icon-jian");
+            $(this).siblings(".three-menu").slideDown(300);
+        }else{
+            $(this).removeClass("open").find(".icon-jian").addClass("icon-jia2").removeClass("icon-jian");
+            $(this).siblings(".three-menu").slideUp(300);
+        }
+    });
+    (function(){
+        if($(window).width()<=1020){
+            $(".top-nav").addClass("collapsed");
+            $("#echMain").removeClass("padding-l-265").addClass("padding-l-55");
+        }else{
+            $(".top-nav").removeClass("collapsed");
+            $("#echMain").addClass("padding-l-265").removeClass("padding-l-55");
+        }
+    })();
+    $(window).resize(function () {
+        console.log($(window).width());
+        if($(window).width()<=1020){
+            $(".top-nav").addClass("collapsed");
+            $("#echMain").removeClass("padding-l-265").addClass("padding-l-55");
+        }else{
+            $(".top-nav").removeClass("collapsed");
+            $("#echMain").addClass("padding-l-265").removeClass("padding-l-55");
+        }
+    });
+
+    $("#onoff").click(function(){
+        $(".top-nav").toggleClass("collapsed");
+        $("#echMain").toggleClass("padding-l-265").toggleClass("padding-l-55");
+    });
+
+</script>

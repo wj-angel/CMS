@@ -1,0 +1,150 @@
+@charset "utf-8";
+/*==========.w-xs-1到12的百分占比============*/
+@media (min-width:460px) {
+  .grid{  //准备一个占位，放上公用的样式块
+    display: inline-block;
+    padding: 0 15px;
+    float: left;
+    min-height:auto;
+    position: relative;
+  }
+  @for $i from 1 to 13 {
+    .w-xs-#{$i} {
+      width: percentage($i / 12);
+      @extend .grid;
+    }
+  }
+  .hidden-xs{
+    display: none;
+  }
+  .visible-xs{
+    display: inline-block;
+  }
+}
+@media (min-width:768px) {
+  .hidden-sm{
+    display: none;
+  }
+  .visible-sm{
+    display: inline-block;
+  }
+  .sm{  //准备一个占位，放上公用的样式块
+    display: inline-block;
+    padding: 0 15px;
+    float: left;
+    min-height:auto;
+    position: relative;
+  }
+  @for $i from 1 to 13 {
+    .w-sm-#{$i} {
+      width:percentage($i / 12 ) ;
+      @extend .sm;
+    }
+    .w-sm-offset-#{$i}{
+      margin-left: percentage($i / 12 );
+    }
+  }
+  .search-ul{
+    display: inline-block;
+  }
+  .navbar-collapse > ul .user{
+    display:inline-block;
+  }
+  .search-li{
+    display:none;
+  }
+  .form-horizontal .control-label {
+    text-align: right;
+  }
+}
+@media (min-width: 992px) {
+  .hidden-md{
+    display: none;
+  }
+  .visible-md{
+    display: inline-block;
+  }
+  .md{  //准备一个占位，放上公用的样式块
+    display: inline-block;
+    padding: 0 15px;
+    float: left;
+    min-height:auto;
+    position: relative;
+  }
+  @for $i from 1 to 13 {
+    .w-md-#{$i} {
+      width: percentage($i / 12);
+      @extend .md;
+    }
+  }
+}
+@media (min-width:1020px) {
+  .show-ilb{
+    display: inline-block;
+  }
+  .show-1020{
+    display: block;
+  }
+  .hidden-1020{
+    display: none;
+  }
+  .navbar-collapse > ul{
+    .refresh-li::after{
+      content:"";
+    }
+  }
+  .side-nav{
+    width:250px;
+    overflow: auto;
+    &>li{
+      position: relative;
+      display: block;
+    }
+    .search-li{
+      display: none;
+    }
+    &>li.lg-show{
+      display: block;
+      &>.sidebar-toggle{
+        display: block;
+      }
+      &>ul {
+        & > li {
+          max-width: none;
+          max-height: 100%;
+          & > a {
+            width: 100%;
+            padding: 0 12px;
+          }
+        }
+      }
+    }
+  }
+  .tow-menu{
+    li.now>a::after{
+      width: 100%;
+      background:rgba(0,0,0,0.2) !important;
+    }
+  }
+}
+@media (min-width:1200px) {
+  .hidden-lg{
+    display: none;
+  }
+  .visible-lg{
+    display:inline-block;
+  }
+  .lg{
+    display: inline-block;
+    padding: 0 15px;
+    float: left;
+    min-height:auto;
+    position: relative;
+  }
+  @for $k from 1 to 13 {
+    .w-lg-#{$k} {
+      width: percentage($k/12);
+      @extend .lg;
+    }
+  }
+}

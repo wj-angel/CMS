@@ -1,0 +1,92 @@
+.btn-primary {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd; }
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc; }
+
+.form-group .form-control {
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.tile.transparent-black .formsub, .tile.transparent-black textarea, .tile.transparent-black input[type="text"] {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 20px; }
+.tile.transparent-black .form-footer {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.form-horizontal .form-group {
+  display: inline-block;
+  padding: 0; }
+  .form-horizontal .form-group .help-block {
+    font-size: 12px; }
+.form-horizontal .form-footer {
+  width: 100%;
+  margin-bottom: -15px;
+  padding: 15px 0;
+  background-color: #f2f2f2;
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  -ms-border-radius: 0 0 4px 4px;
+  -o-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+  margin-left: -15px;
+  margin-right: -15px; }
+.form-horizontal .control-label {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 7px; }
+.form-horizontal .form-control {
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.note-editor .note-editable {
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: auto; }
+
+.note-statusbar .note-resizebar {
+  border-top: 1px solid transparent; }
+
+.btn .btn-primary {
+  color: #f2f2f2; }
+.btn .btn-default {
+  border-width: 1px; }
+
+.input-group-addon.addon-red {
+  background-color: #ff7b76;
+  color: white; }
+
+.input-group-addon.addon-greensea {
+  background-color: #1ccdaa;
+  color: white; }
+
+.input-lg {
+  height: 46px;
+  padding: 10px 16px !important;
+  font-size: 18px;
+  line-height: 1.33; }
+
+.input-sm {
+  height: 25px;
+  min-height: 30px;
+  padding: 5px 10px !important;
+  font-size: 11px;
+  line-height: 1.5; }
+
+#sec1 .form-control {
+  border: 1px solid #e2e2e2;
+  color: #717171; }
+
+.input-group-btn {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle; }
+
+/*# sourceMappingURL=myform-elements.css.map */

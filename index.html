@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MiniMal</title>
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="fontone/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+</head>
+<body>
+<div class="top-nav navbar-default">
+    <!--branding开始-->
+    <div class="navbar-header l logo">
+        <a href="#" class="logo-a ">
+            <strong>MIN</strong>IMAL
+        </a>
+        <a href="javascript:0;" class="onoff" id="onoff">
+            <i class="iconfont icon-menu"></i>
+        </a>
+    </div>
+    <!--/branding-->
+    <!--nav-collapse-->
+    <div class="navbar-collapse ">
+        <ul class="refresh l">
+            <li class="divided refresh-li">
+                <a href="#" class="page-refresh">
+                    <i class="iconfont icon-sync"></i>
+                </a>
+            </li>
+        </ul>
+        <ul class="l search-ul hidden">
+            <li>
+                <div class="main-search">
+                    <i class="iconfont icon-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+            </li>
+        </ul>
+
+        <ul class="quick-actions r">
+            <li class="dropdown divided">
+                <a href="#" class="dropdown-toggle button">
+                    <i class="iconfont icon-shouye-sandaogangcaidan"></i>
+                    <span class="label label-transparent-black">2</span>
+                </a>
+            </li>
+            <li class="dropdown divided">
+                <a href="#" class="dropdown-toggle button">
+                    <i class="iconfont icon-xinfeng"></i>
+                    <span class="label label-transparent-black">1</span>
+                </a>
+            </li>
+            <li class="dropdown divided">
+                <a href="#" class="dropdown-toggle button">
+                    <i class="iconfont icon-xiaoxi1"></i>
+                    <span class="label label-transparent-black">3</span>
+                </a>
+            </li>
+            <li class="dropdown user divided hidden" id="current-user">
+                <div class="pic">
+                    <img src="images/profile-photo.jpg">
+                </div>
+                <a href="#" class="dropdown-toggle button">
+                    John Douey
+                    <i class="iconfont zhankai"></i>
+                </a>
+            </li>
+            <li class="dropdown divided">
+                <a href="#" class="dropdown-toggle button">
+                    <i class="iconfont icon-xiaoxi2"></i>
+                </a>
+            </li>
+        </ul>
+        <ul id="sidenav_container" class="side-nav l one-menu">
+            <li class="side-li search-li">
+                <div class="main-search">
+                    <i class="iconfont icon-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+            </li>
+            <li class="side-li one-li lg-show" id="navigation">
+                <a class="sidebar-toggle" href="javascript:0;" >
+                    Navigation
+                    <i class="iconfont icon-gengduo-copy"></i>
+                </a>
+                <ul class="tow-menu">
+                    <li class="tow-li dropdowm now">
+                        <a href="index.html" class="dropdown-toggle">
+                            <i class="iconfont icon-dashboard"></i>Dashboard
+                            <span class="badge badge-red">1</span>
+                        </a>
+                    </li>
+                    <li class="tow-li dropdowm">
+                        <a href="javascript:0;" class="dropdown-toggle">
+                            <i class="iconfont icon-caidan"></i>Forms
+                            <i class="iconfont icon-jia2 r tow-i .show-ilb"></i>
+                        </a>
+                        <ul class="three-menu hidden">
+                            <li class="three-li">
+                                <a href="myform-elements.html">
+                                    <b class="rightarrow"></b> Common Elements
+                                </a>
+                            </li>
+                            <li class="three-li">
+                                <a href="Validation-elements.html">
+                                    <b class="rightarrow"></b>Validation
+                                </a>
+                            </li>
+                            <li class="three-li">
+                                <a href=" form-wizard.html">
+                                    <b class="rightarrow"></b> Form Wizard
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tow-li dropdowm">
+                        <a href="javascript:0;" class="dropdown-toggle">
+                            <i class="iconfont icon-qianbi1"></i>Interface
+                            <i class="iconfont icon-jia2 r tow-i .show-ilb"></i>
+                        </a>
+                        <ul class="three-menu hidden">
+                            <li class="three-li">
+                                <a href="uiElement.html">
+                                    <b class="rightarrow"></b> UI Elements
+                                </a>
+                            </li>
+                            <li class="three-li">
+                                <a href=" typography.html">
+                                    <b class="rightarrow"></b>Typography
+                                </a>
+                            </li>
+                            <li class="three-li">
+                                <a href="tiles.html">
+                                    <b class="rightarrow"></b>Tiles
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tow-li dropdowm">
+                        <a href="button.html" class="dropdown-toggle">
+                            <i class="iconfont icon-shuidi1"></i> Buttons & Icons
+                        </a>
+                    </li>
+                    <li class="tow-li dropdowm">
+                        <a href=" grid.html" class="dropdown-toggle">
+                            <i class="iconfont icon-gengduo1"></i> Grid Layout
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="side-li one-li">
+                <a href="javascript:0;" class="sidebar-toggle">
+                    Orders Summary
+                    <i class="iconfont icon-gengduo-copy"></i>
+                </a>
+                <div class="media">
+                    <a href="javascript:0;" class="pull-right r red"></a>
+                    <div class="media-bd">
+                        This week sales<h3 class="media-heading">26,149</h3>
+                    </div>
+                </div>
+                <div class="media">
+                    <a href="javascript:0;" class="pull-right r blue">
+                    </a>
+                    <div class="media-bd">
+                        This week sales<h3 class="media-heading">26,149</h3>
+                    </div>
+                </div>
+            </li>
+            <li class="side-li one-li">
+                <a href="javascript:0;" class="sidebar-toggle">
+                    General Settings
+                    <i class="iconfont icon-gengduo-copy"></i>
+                </a>
+                <div class="form-group">
+                    <label class="control-label w-xs-8 switchonoff">Switch ON</label>
+                    <div class="control-label w-xs-4">
+                        <input type="checkbox" class="onoffswitch-checkbox hidden" id="switch-on" name="onoffswitch" >
+                        <label class="onoffswitch-label" for="switch-on" >
+                            <span class="onoffswitch-box"></span>
+                            <span class="onoffswitch-ball"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group w-xs-40">
+                    <label class="control-label w-xs-8 switchonoff">Switch OFF</label>
+                    <div class="control-label w-xs-4">
+                        <input type="checkbox" class="onoffswitch-checkbox hidden" id="switch-off" name="onoffswitch" >
+                        <label class="onoffswitch-label" for="switch-off" >
+                            <span class="onoffswitch-box"></span>
+                            <span class="onoffswitch-ball"></span>
+                        </label>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--/nav-collapse-->
+</div>
+<main class="content">
+    <div class="AD">
+        <div class="container">
+            <a href="javascript:0;">
+            <img src="images/20181204.jpg">
+            </a>
+        </div>
+    </div>
+    <div class="mask hidden">
+
+    </div>
+    <div class="wrap">
+        <div id="echMain" class="main padding-l-265">
+            <div class="pageheader">
+                <h2>
+                    <i class="iconfont icon-yiqiyibiao"></i> Dashboard
+                    <span class="visible-md">// Place subtitle here...</span>
+                </h2>
+                <div class="breadcrumbs r">
+                    <ol>
+                        <li>You are here</li>
+                        <li>>
+                            <a href="index.html">Minimal</a>
+                        </li>
+                        <li class="active">>&nbsp;Dashboard</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="main_bd">
+                <div class="row cards" id="cards">
+                    <!--{card_color:"#d9544f",iName:"sangeren",smalltit:"New Users",-->
+                    <!--h2:"3,659",btm_title:"This month plan %",num:"83"},-->
+                    <div v-for="c in cards" class="card-container w-lg-3 w-sm-6 w-xs-12">
+                        <div class="card card-redbrown hover" >
+                            <div class="front" :style="{background:c.card_color}">
+                                <div class="top">
+                                    <span class="icon-left">
+                                        <i class="iconfont" :class="c.iName"></i>
+                                    </span>
+                                    <div class="right">
+                                        <small>{{c.smalltit}}</small>
+                                        <h2>{{c.h2}}</h2>
+                                    </div>
+                                </div>
+                                <div class="btm">
+                                    <div class="btm_title clearfix">
+                                    <div class="title l">{{c.btm_title}}</div>
+                                    <div class="num r"><span>{{c.num}}</span>%</div>
+                                </div>
+                                    <div class="btm_bar progress">
+                                        <div class="progress_inner" :style="'width:'+ c.num + '%'"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <a href="javascript:0;">
+                                    <i class="iconfont icon-tubiao icon-4x"></i>
+                                    <span>Check Summary</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="w-lg-8 w-md-12">
+                        <section class="tile transparent">
+                            <div class="tile-header color transparent-black textured rounded-top-corners">
+                                <h1>
+                                    <strong>Statistic</strong> Chart
+                                </h1>
+                                <div class="controls">
+                                    <a href="#" class="refresh">
+                                        <i class="iconfont icon-shuaxin"></i>
+                                    </a>
+                                    <a href="#" class="remove">
+                                        <i class="iconfont icon-poweroff"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tile-widget color transparent-black textured">
+                                <div id="statistics-chart" class="statistics chart" >
+                                    style="width: 250px; padding: 0;position: relative;"
+                                    data : ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC']
+                                </div>
+                            </div>
+                            <div class="tile-body color transparent-white rounded-bottom-corners">
+                                <div class="row">
+                                    <ul class="inline">
+                                        <li class="w-md-8 w-sm-12 w-xs-12 text-center">
+                                            <h4 class="underline text-left">
+                                                <strong>Actual</strong> Statistics
+                                            </h4>
+                                            <div class="inner-container">
+                                                <div class="icon_box">
+                                                    <i class="iconfont icon-qian1"></i>
+                                                </div>
+                                                <p class="chart-overall text-center font-thin uppercase">
+                                                    <span class="font-big">6,175</span> Sales
+                                                </p>
+                                            </div>
+                                            <div class="inner-container">
+                                                <div class="icon_box black_2 color-transparent-black">
+                                                    <i class="iconfont icon-yanjing "></i>
+                                                </div>
+                                                <p class="chart-overall text-center font-thin uppercase color-transparent-black">
+                                                    <span class="font-big">6,175</span> Sales
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="w-md-4 w-sm-12 w-xs-12">
+                                            <h4 class="underline text-left">
+                                                <strong>Visitors</strong>Statistics
+                                            </h4>
+                                            <ul class="progress-list" id="progress-list">
+                                                <li v-for="p in prolists">
+                                                    <!--{pro_color:"#a2d200",h5:"America",description:"VISITORS FROM AMERICA",num:"40"},-->
+                                                    <div class="btm">
+                                                        <div class="btm_title clearfix">
+                                                            <div class="title l">
+                                                                <div class="h5">{{p.h5}}</div>
+                                                                <div class="description">{{p.description}}</div>
+                                                            </div>
+                                                            <div class="num r"><span>{{p.num}}</span>%</div>
+                                                        </div>
+                                                        <div class="btm_bar progress">
+                                                            <div class="progress_inner" :style="'width:'+ p.num + '%'+';background:'+ p.pro_color"></div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="tile color transparent-black">
+                            <div class="tile-header">
+                                <h1>
+                                    <strong>Projects</strong> Progress
+                                </h1>
+                                <div class="search r">
+                                    <input type="text" placeholder="Search...">
+                                </div>
+                                <div class="controls">
+                                    <a href="#" class="refresh">
+                                        <i class="iconfont icon-shuaxin"></i>
+                                    </a>
+                                    <a href="#" class="remove">
+                                        <i class="iconfont icon-poweroff"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tile-body no-vpadding">
+                                <div class="table-responsive">
+                                    <table class="tab" id="tablists">
+                                        <thead>
+                                            <tr>
+                                                <th class="sorttab sort-id">ID</th>
+                                                <th class="sorttab sort-alpha">Project</th>
+                                                <th class="sorttab sort-asc sort-desc">Priority</th>
+                                                <th class="sorttab sort-amount">Status</th>
+                                                <th class="text-right">Chart</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <!--{id:"1",project:"Graphic Layout for client",Priority:"HIGH PRIORITY",t_color:"#ff4a43",pronum:"50"},-->
+                                            <tr v-for="t in tablists">
+                                                <td>{{t.id}}</td>
+                                                <td>{{t.project}}</td>
+                                                <td class="color-red priority" :style="'color:'+t.t_color">{{t.Priority}}</td>
+                                                <td class="progress-cell">
+                                                    <div class="progress-info">
+                                                        <div class="percent r">
+                                                            <span>{{t.pronum}}</span>%
+                                                        </div>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress_inner" :style="'width:'+t.pronum +'%'"></div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span id="projectbar1"></span>
+                                                </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tile-footer text-center">
+                                <ul class="pagination_ul">
+                                    <li class="disable"><a href="javascript:0;"> << </a></li>
+                                    <li class="active"><a href="javascript:0;">1</a></li>
+                                    <li class=""><a href="javascript:0;">2</a></li>
+                                    <li class=""><a href="javascript:0;">3</a></li>
+                                    <li class=""><a href="javascript:0;">4</a></li>
+                                    <li class=""><a href="javascript:0;">5</a></li>
+                                    <li class=""><a href="javascript:0;"> >> </a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="w-lg-4 w-md-12 w-sm-12 w-xs-12">
+                        <section class="tile color transparent-black textured sct1">
+                            <div class="tile-header">
+                                <h1>
+                                    <strong>Server</strong>  Load
+                                </h1>
+                                <div class="controls">
+                                    <a href="#" class="refresh">
+                                        <i class="iconfont icon-shuaxin"></i>
+                                    </a>
+                                    <a href="#" class="remove">
+                                        <i class="iconfont icon-poweroff"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tile-widget">
+                                <div class="progress-list with-heading">
+                                    <div class="btm_title clearfix">
+                                        <div class="title l">394 GB</div>
+                                        <div class="num r"><span>42</span>%</div>
+                                    </div>
+                                    <div class="btm_bar progress">
+                                        <div class="progress_inner" style="width: 42%;"></div>
+                                    </div>
+                                </div>
+                                <p class="description">
+                                    <strong>394GB</strong> used of
+                                    <strong>2,048GB</strong> on File Server
+                                </p>
+                            </div>
+                            <div class="title-body paddingtop">
+                                <div id="serverload-chart" class="rickshaw_graph"></div>
+                            </div>
+                        </section>
+                        <section class="tile color transparent-black sct2">
+                            <div class="tile-header">
+                                <h1>
+                                    <strong>Browser</strong> Usage
+                                </h1>
+                                <div class="controls">
+                                    <a href="#" class="refresh">
+                                        <i class="iconfont icon-shuaxin"></i>
+                                    </a>
+                                    <a href="#" class="remove">
+                                        <i class="iconfont icon-poweroff"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tile-body">
+                                <div id="browser-usage" class="morris-chart"></div>
+                                <ul class="inline text-center chart-legend">
+                                    <li>
+                                        <span class="badge badge-outline" style="border-color: #00a3d8"></span>
+                                        Chrome <small>25%</small>,
+                                    </li>
+                                    <li>
+                                        <span class="badge badge-outline" style="border-color: #1693A5"></span>
+                                        Other <small>25%</small>,
+                                    </li>
+                                    <li>
+                                        <span class="badge badge-outline" style="border-color: #2fbbe8"></span>
+                                        Safari <small>20%</small>,
+                                    </li>
+                                    <li>
+                                        <span class="badge badge-outline" style="border-color: #72cae7"></span>
+                                        Firefox <small>15%</small>,
+                                    </li>
+                                    <li>
+                                        <span class="badge badge-outline" style="border-color: #ffc100"></span>
+                                        Internet Explorer  <small>10%</small>,
+                                    </li>
+                                    <li>
+                                        <span class="badge badge-outline" style="border-color: #d9544f"></span>
+                                        Opera <small>5%</small>,
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="tile transparent sct3">
+                            <div class="tile-header redbrown text-center color rounded-top-corners">
+                                <div class="btn pull-left">
+                                    <i class="iconfont icon-bofang1"></i>
+                                </div>
+                                <h1>
+                                    <strong>Server</strong>  Load
+                                </h1>
+                                <div class="controls">
+                                    <a href="#" class="refresh">
+                                        <i class="iconfont icon-shuaxin"></i>
+                                    </a>
+                                    <a href="#" class="remove">
+                                        <i class="iconfont icon-poweroff"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tile-body color transparent-black rounded-bottom-corners">
+                                <input id="input-plchd" class="bottommargin w100p" type="text" placeholder="Add new todo...">
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="w-md-6">
+                        <section class="tile transparent recent-activity">
+                            <div class="tile-header transparent underline color bottommargin">
+                                <h1>
+                                    <strong>Recent</strong>  Activity
+                                </h1>
+                                <div class="controls">
+                                    <a href="#" class="refresh">
+                                        <i class="iconfont icon-shuaxin"></i>
+                                    </a>
+                                    <a href="#" class="remove">
+                                        <i class="iconfont icon-poweroff"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tile-widget color transparent-black rounded-top-corners nopadding"></div>
+                            <div class="tile-body tab-content nopadding rounded-bottom-corners"></div>
+                        </section>
+                    </div>
+                    <div class="w-md-6">
+                        <section class="tile transparent">
+                            <div class="tile-header transparent underline color bottommargin">
+                                <h1>
+                                    <strong>Quick</strong> Message
+                                </h1>
+                                <div class="controls">
+                                    <a href="#" class="refresh">
+                                        <i class="iconfont icon-shuaxin"></i>
+                                    </a>
+                                    <a href="#" class="remove">
+                                        <i class="iconfont icon-poweroff"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tile-widget color transparent-black rounded-top-corners">
+                                <form class="form-horizontal"></form>
+                            </div>
+                            <div class="tile-body nopadding"></div>
+                            <div class="tile-footer rounded-bottom-corners text-right">
+                                <a href="javascript:0;">
+                                    <strong>Send</strong> message
+                                    <i class="iconfont icon-massage"></i>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+</body>
+</html>
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/echarts/dist/echarts.min.js"></script>
+<script type="text/javascript" src="bower_components/vue/dist/vue.js"></script>
+<script type="text/javascript" src="js/echart.js"></script>
+<script type="text/javascript">
+    let count = 0;
+    $(".sidebar-toggle").click(function () {
+        count++;
+        if(count%2!=0){
+            $(this).find(".iconfont").removeClass("icon-gengduo-copy").addClass("icon-shangjiantou");
+        }else{
+            $(this).find(".iconfont").addClass("icon-gengduo-copy").removeClass("icon-shangjiantou");
+        }
+        $(this).siblings().slideToggle(300);
+    });
+    $(".dropdown-toggle").click(function () {
+        if(!$(this).hasClass("open")){
+            $(".dropdown-toggle").removeClass("open").find(".icon-jian").addClass("icon-jia2").removeClass("icon-jian");
+            $(".dropdown-toggle").siblings(".three-menu").hide();
+            $(this).addClass("open").find(".icon-jia2").removeClass("icon-jia2").addClass("icon-jian");
+            $(this).siblings(".three-menu").slideDown(300);
+        }else{
+            $(this).removeClass("open").find(".icon-jian").addClass("icon-jia2").removeClass("icon-jian");
+            $(this).siblings(".three-menu").slideUp(300);
+        }
+    });
+    (function(){
+        if($(window).width()<=1020){
+            $(".top-nav").addClass("collapsed");
+            $("#echMain").removeClass("padding-l-265").addClass("padding-l-55");
+        }else{
+            $(".top-nav").removeClass("collapsed");
+            $("#echMain").addClass("padding-l-265").removeClass("padding-l-55");
+        }
+    })();
+    $(window).resize(function () {
+        console.log($(window).width());
+        if($(window).width()<=1020){
+            $(".top-nav").addClass("collapsed");
+            $("#echMain").removeClass("padding-l-265").addClass("padding-l-55");
+        }else{
+            $(".top-nav").removeClass("collapsed");
+            $("#echMain").addClass("padding-l-265").removeClass("padding-l-55");
+        }
+    });
+
+    $("#onoff").click(function(){
+        $(".top-nav").toggleClass("collapsed");
+        $("#echMain").toggleClass("padding-l-265").toggleClass("padding-l-55");
+    });
+
+    // <!--vue-->
+    // <!--cards  vue数据分析-->
+    (function(){
+        new Vue({
+            el:"#cards",
+            data:{
+                cards:[
+                    {card_color:"#d9544f",iName:"icon-sangeren",smalltit:"New Users",h2:"3,659",btm_title:"This month plan %",num:"83"},
+                    {card_color:"#418bca",iName:"icon-gouwuche",smalltit:"New Orders",h2:"19,214",btm_title:"This month plan %",num:"100"},
+                    {card_color:"#16a085",iName:"icon-qian1",smalltit:"Sales",h2:"169,541",btm_title:"This month plan %",num:"42"},
+                    {card_color:"#3f4e62",iName:"icon-yanjing",smalltit:"Visits",h2:"9,634",btm_title:"This month plan %",num:"25"}
+                ]
+            },
+            computed:{
+                cNum(){
+                    return num+"%";
+                }
+            },
+            directives:{
+
+            }
+        })
+    })();
+//     progress-list ====vue
+    (function(){
+        new Vue({
+            el:"#progress-list",
+            data:{
+            prolists:[
+                    {pro_color:"#a2d200",h5:"America",description:"VISITORS FROM AMERICA",num:"40"},
+                    {pro_color:"#22beef",h5:"Europe",description:"VISITORS FROM EUROPE",num:"38"},
+                    {pro_color:"#cd97eb",h5:"Asia",description:"VISITORS FROM ASIA",num:"12"},
+                    {pro_color:"#ffc100",h5:"Africa",description:"VISITORS FROM AFRICA ",num:"7"},
+                    {pro_color:"#ff4a43",h5:"Other",description:"",num:"6"},
+                ]
+            },
+            computed:{
+                cNum(){
+                    return num+"%";
+                }
+            },
+            directives:{}
+        })
+    })();
+//    table-list=======vue
+      (function(){
+        new Vue({
+            el:"#tablists",
+            data:{
+                tablists:[
+                    {id:"1",project:"Graphic Layout for client",Priority:"HIGH PRIORITY",t_color:"#ff4a43",pronum:"50"},
+                    {id:"2",project:"Make website responsive",Priority:"LOW PRIORITY",t_color:"#a2d200",pronum:"13"},
+                    {id:"3",project:"Clean css/html/js code",Priority:"HIGH PRIORITY",t_color:"#ff4a43",pronum:"76"},
+                    {id:"4",project:"Database Optimization",Priority:"NORMAL PRIORITY",t_color:"#ffc100",pronum:"38"},
+                    {id:"5",project:"Database Migration",Priority:"LOW PRIORITY",t_color:"#a2d200",pronum:"9"},
+                    {id:"6",project:"Email server backup",Priority:"NORMAL PRIORITY",t_color:"#ffc100",pronum:"19"},
+                ]
+            },
+            computed:{
+            },
+            directives:{}
+        })
+    })();
+</script>
